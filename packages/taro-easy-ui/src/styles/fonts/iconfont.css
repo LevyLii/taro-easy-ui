@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3395331 */
+  src: url('iconfont.ttf?t=1652326098531') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 26px;
+  color: #333333;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiantouyou:before {
+  content: "\e62d";
+}
+
+.icon-jiantouxia:before {
+  content: "\e62e";
+}
+
