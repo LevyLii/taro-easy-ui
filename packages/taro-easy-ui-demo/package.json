@@ -43,6 +43,7 @@
     "@tarojs/taro": "3.4.3",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "simple-store-manager": "^1.0.0",
     "taro-easy-ui": "file:../taro-easy-ui"
   },
   "devDependencies": {

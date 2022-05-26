@@ -1,5 +1,6 @@
-export {default as Store} from './store'
 export {default as Container} from './container'
 export {default as List} from './list'
 export {default as ListItem} from './listItem'
 export {default as Title} from './title'
+export {default as Button} from './button'
+export {default as Tabs} from './tabs'

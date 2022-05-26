@@ -1,4 +1,6 @@
 export {default as ContainerTypes} from './container'
 export {default as ListTypes} from './list'
 export {default as ListItemTypes} from './listItem'
-export {default as TitleTypes} from './listItem'
+export {default as TitleTypes} from './title'
+export {default as ButtonTypes} from './button'
+export {default as TabsTypes} from './tabs'

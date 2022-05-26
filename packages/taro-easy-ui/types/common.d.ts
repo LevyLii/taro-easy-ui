@@ -1,4 +1,5 @@
 export interface CommonStyle {
     children?: any
-    style?: Object
+    style?: {}
+    onclick?: () => void
 }

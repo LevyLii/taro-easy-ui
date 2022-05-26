@@ -1,0 +1,38 @@
+@import "common";
+
+.teu-tabs {
+  width: 750px;
+  height: 80px;
+  white-space: nowrap;
+  background-color: @color-background;
+  border-bottom: 2px solid @color-border;
+  position: relative;
+
+  .teu-tabs--item {
+    display: inline-block;
+    width: max-content;
+    height: 100%;
+    padding: 0 24px;
+
+    .teu-tabs--item--text {
+      &:extend(.flex-center);
+
+      height: 100%;
+      transition: .4s;
+    }
+
+    .teu-tabs--item--text---active {
+      color: @color-primary;
+    }
+  }
+
+  .teu-tabs--item--underline {
+    height: 6px;
+    width: 36px;
+    border-radius: 99999px;
+    position: absolute;
+    bottom: 0;
+    background-color: @color-primary;
+    transition: .4s;
+  }
+}

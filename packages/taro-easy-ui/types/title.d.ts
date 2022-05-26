@@ -2,9 +2,10 @@ import {ComponentClass} from "react";
 import {CommonStyle} from "./common";
 
 export interface TitleProps extends CommonStyle {
-    title: string
+    name: string
     showBlock?: 'true' | 'false'
     blockColor?: string
+    showBorder?: 'true' | 'false'
 }
 
 declare const Title: ComponentClass<TitleProps>

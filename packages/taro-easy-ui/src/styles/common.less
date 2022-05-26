@@ -1,6 +1,29 @@
+@color-primary: #1890ff;
+@color-border: #F0F0F0;
+@color-background: #FFFFFF;
+@color-text: #262626;
+
 text, view, textarea {
   font-size: 28px;
-  color: #333333;
+  color: @color-text;
   word-break: break-all;
   box-sizing: border-box;
+}
+
+.flex-line {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ellipsis(@lineNum: 1) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @lineNum;
+  overflow: hidden;
 }

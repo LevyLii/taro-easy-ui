@@ -7,24 +7,22 @@ import {ListItem} from "../../index";
 
 export default class List extends CommonComponent {
     props: ListProps
-    types: ListTypes
 
     constructor(props: ListProps) {
-        super(props);
-        this.types = new ListTypes(props);
-        Object.assign(
-            this.state,
-            {
-                types: this.types.getTypes()
-            }
-        )
+        super(props, ListTypes);
     }
 
     render() {
         let {types} = this.state
         let {data} = this.props
         return (
-            <View className={'teu-list'} style={{...types}}>
+            <View
+                className={'teu-list'}
+                style={{...types}}
+                onClick={(e) => {
+                    super.onclick(e)
+                }}
+            >
                 {
                     data.map(res => {
                         return (

@@ -1,25 +1,26 @@
 import React from "react";
-import "../../src/styles/index.less";
-import {Store} from "../store";
+import {eConsole} from "../utils";
 
 export default class Common extends React.Component {
-    store: Store;
-    state: any;
+    state: any
+    props: any
+    types: { getTypes: () => {} }
 
-    constructor(props) {
-        super(props);
-        this.store = Store.createStore();
-        this.store.on(() => {
-            this.setState({
-                store: this.store.getData()
-            })
-        });
+    constructor(props, componentType) {
+        super(props)
+        this.types = new componentType(props)
         this.state = {
-            store: this.store.getData()
-        };
+            types: this.types.getTypes()
+        }
+        this.onclick.bind(this)
     }
 
-    emit(value: Object) {
-        this.store.emit(value)
+    onclick(event) {
+        event.stopPropagation()
+        try {
+            this.props.onclick()
+        } catch (e) {
+            eConsole('未定义onclick')
+        }
     }
 }
