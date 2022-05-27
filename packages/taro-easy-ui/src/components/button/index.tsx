@@ -19,7 +19,7 @@ export default class Button extends CommonComponent {
                 className={'teu-button'}
                 style={{...types}}
                 onClick={(e) => {
-                    super.onclick(e)
+                    super.onClick(e)
                 }}
             >
                 {name}

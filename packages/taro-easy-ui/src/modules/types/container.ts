@@ -6,15 +6,15 @@ export default class ContainerTypes extends Common {
         super(
             props,
             {
-                mode: {
-                    horizontal: {
-                        flexDirection: 'row'
-                    },
-                    vertical: {
-                        flexDirection: 'column'
-                    },
-                    default: 'vertical'
-                }
+                'mode': new Map<string | boolean, any>([
+                    ['horizontal', {
+                        'flexDirection': 'row'
+                    }],
+                    ['vertical', {
+                        'flexDirection': 'column'
+                    }],
+                    ['default', 'vertical']
+                ])
             }
         )
     }

@@ -6,13 +6,13 @@ export default class ListItemTypes extends Common {
         super(
             props,
             {
-                showBorder: {
-                    'true': {},
-                    'false': {
-                        borderBottomWidth: 0
-                    },
-                    'default': 'true'
-                }
+                'showBorder': new Map<string | boolean, any>([
+                    [true, {}],
+                    [false, {
+                        'borderBottomWidth': 0
+                    }],
+                    ['default', true]
+                ])
             }
         )
     }

@@ -3,9 +3,9 @@ import {CommonStyle} from "./common";
 
 export interface TitleProps extends CommonStyle {
     name: string
-    showBlock?: 'true' | 'false'
+    hideBlock?: boolean
     blockColor?: string
-    showBorder?: 'true' | 'false'
+    showBorder?: boolean
 }
 
 declare const Title: ComponentClass<TitleProps>

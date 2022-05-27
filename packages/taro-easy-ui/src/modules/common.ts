@@ -12,13 +12,13 @@ export default class Common extends React.Component {
         this.state = {
             types: this.types.getTypes()
         }
-        this.onclick.bind(this)
+        this.onClick.bind(this)
     }
 
-    onclick(event) {
+    onClick(event) {
         event.stopPropagation()
         try {
-            this.props.onclick()
+            this.props.onClick()
         } catch (e) {
             eConsole('未定义onclick')
         }

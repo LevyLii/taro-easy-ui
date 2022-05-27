@@ -7,16 +7,16 @@ export default class ButtonTypes extends Common {
         super(
             props,
             {
-                mode: {
-                    'circle': {
+                'mode': new Map<string | boolean, any>([
+                    ['circle', {
                         'borderRadius': fitUnit(99999)
-                    },
-                    'semicircle': {
+                    }],
+                    ['semicircle', {
                         'borderRadius': fitUnit(8)
-                    },
-                    'square': {},
-                    'default': 'semicircle'
-                }
+                    }],
+                    ['square', {}],
+                    ['default', 'semicircle']
+                ])
             },
             {
                 'backgroundColor': 'backgroundColor',

@@ -3,11 +3,9 @@ import {CommonStyle} from "./common";
 
 export interface ListItemProps extends CommonStyle {
     name: string
-    showBorder?: 'true' | 'false'
+    subName?: string
+    showBorder?: boolean
     hideArrow?: boolean
-    canNavigate?: boolean
-    navigateMode?: 'navigate' | 'switch' | 'redirect' | 'relaunch'
-    navigateUrl?: string
 }
 
 declare const ListItem: ComponentClass<ListItemProps>

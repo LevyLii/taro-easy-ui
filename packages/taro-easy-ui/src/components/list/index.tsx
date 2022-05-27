@@ -20,7 +20,7 @@ export default class List extends CommonComponent {
                 className={'teu-list'}
                 style={{...types}}
                 onClick={(e) => {
-                    super.onclick(e)
+                    super.onClick(e)
                 }}
             >
                 {

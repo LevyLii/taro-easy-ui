@@ -13,17 +13,18 @@ export default class ListItem extends CommonComponent {
 
     render() {
         let {types} = this.state
-        let {name} = this.props
+        let {name, subName, hideArrow} = this.props
         return (
             <View
                 className={'teu-list-item'}
                 style={{...types}}
                 onClick={(e) => {
-                    super.onclick(e)
+                    super.onClick(e)
                 }}
             >
                 <View className={'teu-list-item--name'}>{name}</View>
-                <Text className={'iconfont icon-jiantouyou teu-list-item--arrow'}/>
+                <View className={'teu-list-item--sub'}>{subName}</View>
+                {!hideArrow && <Text className={'iconfont icon-jiantouyou teu-list-item--arrow'}/>}
             </View>
         );
     }

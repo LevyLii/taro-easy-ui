@@ -20,7 +20,7 @@ export default class Container extends CommonComponent {
                 className={'teu-container'}
                 style={{...types}}
                 onClick={(e) => {
-                    super.onclick(e)
+                    super.onClick(e)
                 }}
             >
                 {

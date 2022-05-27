@@ -2,6 +2,7 @@
 @color-border: #F0F0F0;
 @color-background: #FFFFFF;
 @color-text: #262626;
+@color-text--sub: #8c8c8c;
 
 text, view, textarea {
   font-size: 28px;
@@ -26,4 +27,16 @@ text, view, textarea {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: @lineNum;
   overflow: hidden;
+}
+
+.curtain {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, .7);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: opacity .4s;
 }

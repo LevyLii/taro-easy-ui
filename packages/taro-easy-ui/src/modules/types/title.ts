@@ -5,7 +5,15 @@ export default class TitleTypes extends Common {
     constructor(props: TitleProps) {
         super(
             props,
-            {}
+            {
+                'showBorder': new Map<string | boolean, any>([
+                    [true, {}],
+                    [false, {
+                        'borderBottomWidth': 0
+                    }],
+                    ['default', true]
+                ])
+            }
         )
     }
 }

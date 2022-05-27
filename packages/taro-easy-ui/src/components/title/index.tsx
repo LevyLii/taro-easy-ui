@@ -13,16 +13,22 @@ export default class Title extends CommonComponent {
 
     render() {
         let {types} = this.state
-        let {name} = this.props
+        let {name, hideBlock, blockColor} = this.props
         return (
             <View
                 className={'teu-title'}
                 style={{...types}}
                 onClick={(e) => {
-                    super.onclick(e)
+                    super.onClick(e)
                 }}
             >
-                <View className={'teu-title--block'}/>
+                {
+                    !hideBlock &&
+                    <View
+                        className={'teu-title--block'}
+                        style={blockColor ? {backgroundColor: blockColor} : {}}
+                    />
+                }
                 <View className={'teu-title--name'}>{name}</View>
             </View>
         );

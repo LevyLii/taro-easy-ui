@@ -1,6 +1,6 @@
 export class Common {
     props: { style?: {} }
-    types: { default?: '' }
+    types: any
     styles: {} | undefined
 
     constructor(props: {}, types: {}, styles?: {}) {
@@ -14,7 +14,7 @@ export class Common {
         for (let i in this.types) {
             Object.assign(
                 types,
-                this.types[i][this.props[i] ? this.props[i] : this.types[i].default]
+                this.types[i].get(this.props[i] !== undefined ? this.props[i] : this.types[i].get('default'))
             )
         }
         if (this.props.style) {

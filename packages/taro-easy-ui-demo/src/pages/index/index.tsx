@@ -8,14 +8,22 @@ const list: ListProps = {
     data: [
         {
             name: '按钮',
-            onclick: () => {
+            subName: '点击前往详情页',
+            hideArrow: true,
+            onClick: () => {
                 Taro.navigateTo({url: '/pages/button/index'}).then()
             }
         },
         {
             name: '标签栏',
-            onclick: () => {
+            onClick: () => {
                 Taro.navigateTo({url: '/pages/tabs/index'}).then()
+            }
+        },
+        {
+            name: '抽屉',
+            onClick: () => {
+                Taro.navigateTo({url: '/pages/drawer/index'}).then()
             }
         }
     ]
