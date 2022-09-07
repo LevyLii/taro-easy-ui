@@ -1,6 +1,6 @@
 {
-  "name": "taro-easy-ui",
-  "version": "1.0.0",
+  "name": "@levylii/taro-easy-ui",
+  "version": "1.0.1",
   "description": "UI KIT for Taro",
   "keywords": [
     "taro",
@@ -8,7 +8,7 @@
     "ui"
   ],
   "author": "LevyLii <782712046@163.com>",
-  "homepage": "",
+  "homepage": "https://github.com/LevyLii/taro-easy-ui",
   "license": "MIT",
   "main": "lib/index.js",
   "source": "src/index.tsx",
@@ -27,17 +27,16 @@
     "build": "yarn run build:lib",
     "build:lib": "tsc --project ./tsconfig.build.json"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-      "@tarojs/components": "3.4.3",
-      "@tarojs/runtime": "3.4.3",
-      "@tarojs/taro": "3.4.3",
-      "@tarojs/plugin-framework-react": "3.4.3",
-      "@tarojs/react": "3.4.3",
-      "react-dom": "^17.0.0",
-      "react": "^17.0.0",
-      "@types/react": "^17.0.2",
-      "typescript": "^4.1.0"
+    "@tarojs/components": "3.4.3",
+    "@tarojs/plugin-framework-react": "3.4.3",
+    "@tarojs/react": "3.4.3",
+    "@tarojs/runtime": "3.4.3",
+    "@tarojs/taro": "3.4.3",
+    "@types/react": "^17.0.2",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "typescript": "^4.1.0"
   }
 }
