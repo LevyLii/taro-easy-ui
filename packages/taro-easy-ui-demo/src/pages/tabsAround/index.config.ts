@@ -1,3 +1,3 @@
 export default definePageConfig({
-    navigationBarTitleText: '标签页(顺序排列)'
+    navigationBarTitleText: '标签页(占位平分)'
 })

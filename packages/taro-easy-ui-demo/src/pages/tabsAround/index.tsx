@@ -24,17 +24,14 @@ export default class Index extends React.Component {
         return (
             <Container space={24} style={{paddingBottom: '24rpx'}}>
                 <Tabs
-                    data={['标签一', '标签二', '标签三', '标签四', '标签五', '标签六', '标签七']}
+                    data={['标签一', '标签二', '标签三']}
+                    style={{display:'flex',justifyContent:'space-around'}}
                     currentTabIndex={current}
                     onTab={res => {
                         this.setCurrent(res)
                     }}
                 />
                 <View>内容{current + 1}</View>
-                <Tabs
-                    data={['标签一', '标签二', '标签三']}
-                    style={{display:'flex',justifyContent:'space-around'}}
-                />
             </Container>
         );
     }

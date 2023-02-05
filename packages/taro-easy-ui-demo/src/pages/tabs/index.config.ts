@@ -1,3 +1,3 @@
 export default definePageConfig({
-    navigationBarTitleText: '标签栏'
+    navigationBarTitleText: '标签页(顺序排列)'
 })
